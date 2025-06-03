@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="../../Css for Facility.css">
+	
+</head>
+  <div clas="main">
+	<div class="navbar">
+	  <div class="icon">
+		<h2 align="center" class="logo">FACILITIES</h2>
+		  
+		</div>
+    </div>
+</div>
+<body>
+	<div class="card-conatiner">
+	<img class="library" src="../Image for Bootstrap/web design/3.png">
+		<div class="card-content">
+		 <h2 class="library comment">LIBRARY</h2>
+		<p> The school library offers a wide range of academic resources, including textbooks, research journals, theses, and digital references that support coursework and project development. It provides a quiet and focused environment ideal for studying and conducting research.</p> 
+			<p class="feature-content-descrition">If you want to learn more please click the link below. </p><a href="https://www.facebook.com/ctudanaolibrary" target="_parent">Visit on Fb page</a>. Thank you for visiting our website. Please come again!</p>
+		
+		</div>	
+	</div>
+	<div class="card-conatiner">
+	<img class="library" src="../Image for Bootstrap/web design/4.png">
+		<div class="card-content">
+		 <h2 class="library comment">CLINIC</h2>
+		<p>At Cebu Technological University's (CTU) Danao Campus, our school clinic is more than just a medical facility; it's a caring hub where students and staff find support and well-being.We're dedicated to providing compassionate care, addressing minor health concerns with a gentle touch and a listening ear. The goal of our clinic is to create a safe and healthy learning environment where everyone feels comfortable seeking help when needed, knowing they'll receive understanding and support in their journey to wellness.  We believe that a healthy mind and body are essential for academic success and personal growth, and we're here to help nurture both.</p> 
+			<p class="feature-content-descrition">If you want to learn more please click the link below. </p><a href="https://www.facebook.com/profile.php/?id=100065118753835" target="_parent">Visit us on Fb page</a>. Thank you for visiting our website. Please come again!</p>
+		</div>	
+	</div>
+	
+	<div class="card-conatiner">
+	<img class="library" src="../Image for Bootstrap/web design/5.png">
+		<div class="card-content">
+		 <h2 class="library comment">WORK STUDY MEASUREMENT</h2>
+		<p>Work Study and Measurement Tools and Equipment this area features essential tools used in time and motion studies, productivity analysis, and process improvement. Equipment such as stopwatches, time study boards, calipers, and other measuring devices help students understand how to analyze work processes and improve operational efficiency.</p>
+		
+		</div>	
+	</div>
+	
+	<div class="card-conatiner">
+	<img class="library" src="../Image for Bootstrap/web design/6.png">
+		<div class="card-content">
+		 <h2 class="library comment">ERGONOMIC LABORATORY</h2>
+		<p> The Ergonomics Laboratory is designed to help students explore the interaction between humans and their work environments. It includes tools for assessing posture, workspace design, lighting, noise, and other factors that affect comfort, safety, and productivity, promoting a healthier and more efficient workplace.</p>
+		
+		</div>	
+	</div>
+	
+	
+
+</body>
+</html>
