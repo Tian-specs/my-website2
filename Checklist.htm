@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple Checklist (HTML + CSS)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 400px;
+      margin: 50px auto;
+      background: #f5f5f5;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li {
+      background: white;
+      margin-bottom: 10px;
+      padding: 12px 15px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      cursor: pointer;
+      user-select: none;
+    }
+    /* Hide default checkbox */
+    input[type="checkbox"] {
+      display: none;
+    }
+    /* Custom checkbox style */
+    label {
+      position: relative;
+      padding-left: 30px;
+      cursor: pointer;
+      flex-grow: 1;
+      color: #333;
+      font-size: 16px;
+    }
+    /* Create custom checkbox box */
+    label::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      border: 2px solid #666;
+      border-radius: 4px;
+      background: white;
+      box-sizing: border-box;
+    }
+    /* Checkmark */
+    input[type="checkbox"]:checked + label::after {
+      content: "";
+      position: absolute;
+      left: 5px;
+      top: 50%;
+      transform: translateY(-50%) rotate(45deg);
+      width: 6px;
+      height: 12px;
+      border-right: 3px solid #28a745;
+      border-bottom: 3px solid #28a745;
+    }
+    /* Strike-through text when checked */
+    input[type="checkbox"]:checked + label {
+      color: #888;
+      text-decoration: line-through;
+    }
+  </style>
+</head>
+<body>
+  <h2>First Year</h2>
+	<ul> First Sem 
+	 </ul>
+  <ul>
+    <li>
+      <input type="checkbox" id="task1" />
+      <label for="task1">Introduction Of Engineering </label>
+    </li>
+    <li>
+      <input type="checkbox" id="task2" />
+      <label for="task2">Principles of Economics</label>
+    </li>
+    <li>
+      <input type="checkbox" id="task3" />
+      <label for="task3">Pneumatic and Programmable Logic Controller</label>
+    </li>
+    <li>
+      <input type="checkbox" id="task4" />
+      <label for="task4">Calculus 1</label>
+    </li>
+	  <li>
+	  <input type="checkbox" id="task5" />
+      <label for="task5">Chemistry for Engineering (lab)</label>
+    </li>
+	  <li>
+	  <input type="checkbox" id="task6" />
+      <label for="task6">Chemsitry for Engineering (lec)</label>
+    </li>
+	  <li>
+	  <input type="checkbox" id="task7" />
+      <label for="task7">Computer Fundmentals and Programming</label>
+    </li>
+	  <li>
+	  <input type="checkbox" id="task8" />
+      <label for="task8">PATHFit1 (PE)</label>
+    </li>
+	  <li>
+	  <input type="checkbox" id="task9" />
+      <label for="task9">NSTP 1</label>
+    </li>
+  </ul>
+	<ul> Second Sem 
+	 </ul>
+	 <ul>
+    <li>
+      <input type="checkbox" id="task10" />
+      <label for="task10">Statistical Analysis for Industrial Engineering 1 </label>
+    </li>
+    <li>
+      <input type="checkbox" id="task11" />
+      <label for="task2">Basic Acounting </label>
+    </li>
+    <li>
+      <input type="checkbox" id="task12" />
+      <label for="task12">Computer-Aide Drafting </label>
+    </li>
+    <li>
+      <input type="checkbox" id="task13" />
+      <label for="task13">Calculus 2</label>
+    </li>
+	  <li>
+	  <input type="checkbox" id="task14" />
+      <label for="task14">Physics for Engineering (lab)</label>
+    </li>
+	  <li>
+	  <input type="checkbox" id="task15" />
+      <label for="task15">Physics for Engineering (lec)</label>
+    </li>
+	  <li>
+	  <input type="checkbox" id="task16" />
+      <label for="task16">Porpusive Comunication</label>
+    </li>
+		 <li>
+	  <input type="checkbox" id="task19" />
+      <label for="task19">Understanding The Self</label>
+    </li>
+	  <li>
+	  <input type="checkbox" id="task17" />
+      <label for="task17">PATHFit2 (PE)</label>
+    </li>
+	  <li>
+	  <input type="checkbox" id="task18" />
+      <label for="task18">NSTP 2</label>
+    </li>
+	</ul>
+	 <h2>Second Year</h2>
+	<ul> First Sem 
+	 </ul>
+  <ul>
+    <li>
+      <input type="checkbox" id="task100" />
+      <label for="task100">Industrial Materials and Processes (lec) </label>
+    </li>
+    <li>
+      <input type="checkbox" id="task20" />
+      <label for="task20">Industrial Materials and Processes (lab)</label>
+    </li>
+    <li>
+      <input type="checkbox" id="task21" />
+      <label for="task21">Statistical Analysis for Industrial Engineering 2</label>
+    </li>
+    <li>
+      <input type="checkbox" id="task22" />
+      <label for="task22">Industrial Organization and Management</label>
+    </li>
+	  <li>
+	  <input type="checkbox" id="task23" />
+      <label for="task23">Financial Accounting </label>
+    </li>
+	  <li>
+	  <input type="checkbox" id="task24" />
+      <label for="task224">Engineering Mechanics</label>
+    </li>
+	  <li>
+	  <input type="checkbox" id="task25" />
+      <label for="task25">Differental Equations</label>
+    </li>
+	  <li>
+	  <input type="checkbox" id="task26" />
+      <label for="task26">Mathematics in The Modern World</label>
+    </li>
+	  <li>
+	  <input type="checkbox" id="task27" />
+      <label for="task27">The Entrepreneurial Mind</label>
+    </li>
+	  <li>
+	  <input type="checkbox" id="task207" />
+      <label for="task207">PATHFit 3 (PE 3)</label>
+    </li>
+  </ul>
+	<ul> Second Sem 
+	 </ul>
+	 <ul>
+    <li>
+      <input type="checkbox" id="task28" />
+      <label for="task28">Advance Mathematics for Industrial Engineering  </label>
+    </li>
+    <li>
+      <input type="checkbox" id="task29" />
+      <label for="task29">Work Study Measurement </label>
+    </li>
+    <li>
+      <input type="checkbox" id="task30" />
+      <label for="task30">Information Systems </label>
+    </li>
+    <li>
+      <input type="checkbox" id="task31" />
+      <label for="task31">System Dynamics</label>
+    </li>
+	  <li>
+	  <input type="checkbox" id="task32" />
+      <label for="task32">Project Management </label>
+    </li>
+	  <li>
+	  <input type="checkbox" id="task33" />
+      <label for="task33">Engineering Economics</label>
+    </li>
+	  <li>
+	  <input type="checkbox" id="task34" />
+      <label for="task34">The Contemporary World</label>
+    </li>
+		 <li>
+	  <input type="checkbox" id="task35" />
+      <label for="task35">Life and Work of Rizal</label>
+    </li>
+	  <li>
+	  <input type="checkbox" id="task36" />
+      <label for="task36">Living in the IT Era</label>
+    </li>
+	  <li>
+	  <input type="checkbox" id="task37" />
+      <label for="task37">PATHFit 4 (PE 4)</label>
+    </li>
+	</ul>
+	 <h2>Third Year</h2>
+	<ul> First Sem 
+	 </ul>
+  <ul>
+    <li>
+      <input type="checkbox" id="task38" />
+      <label for="task38">Operations Research 1 </label>
+    </li>
+    <li>
+      <input type="checkbox" id="task39" />
+      <label for="task39">Quality Management Systems</label>
+    </li>
+    <li>
+      <input type="checkbox" id="task40" />
+      <label for="task40">Ergonomics 1</label>
+    </li>
+    <li>
+      <input type="checkbox" id="task41" />
+      <label for="task41">Operations Management 1</label>
+    </li>
+	  <li>
+	  <input type="checkbox" id="task42" />
+      <label for="task42">Managerial Accounting </label>
+    </li>
+	  <li>
+	  <input type="checkbox" id="task43" />
+      <label for="task43">Thermodynamics </label>
+    </li>
+	  <li>
+	  <input type="checkbox" id="task44" />
+      <label for="task45">Methodology of Research</label>
+    </li>
+	  <li>
+	  <input type="checkbox" id="task46" />
+      <label for="task47">Technopreneurship 101</label>
+    </li>
+	  <li>
+	  <input type="checkbox" id="task48" />
+      <label for="task48">Basic Occupational Safety and Health</label>
+    </li>
+  </ul>
+	<ul> Second Sem 
+	 </ul>
+
+    <li>
+      <input type="checkbox" id="task49" />
+      <label for="task49">Operations Research 2 </label>
+    </li>
+    <li>
+      <input type="checkbox" id="task50" />
+      <label for="task50">Operations Management 2 </label>
+    </li>
+    <li>
+      <input type="checkbox" id="task51" />
+      <label for="task51">Ergonomics 2 </label>
+    </li>
+    <li>
+      <input type="checkbox" id="task52" />
+      <label for="task52">Research Writing</label>
+    </li>
+	  <li>
+	  <input type="checkbox" id="task53" />
+      <label for="task53">Marketing Management</label>
+    </li>
+	  <li>
+	  <input type="checkbox" id="task54" />
+      <label for="task54">Enterprise Resource Planning </label>
+    </li>
+	  <li>
+	  <input type="checkbox" id="task55" />
+      <label for="task55">Ethics</label>
+    </li>
+		 <li>
+	  <input type="checkbox" id="task56" />
+      <label for="task56">Environmental Science</label>
+    </li>
+	  
+	<ul> Summer Class 
+	 </ul>
+  <ul>
+    <li>
+      <input type="checkbox" id="task590" />
+      <label for="task590">IE Industry Immersion </label>
+    </li>
+	</ul>
+	 <h2>Fourth Year</h2>
+	<ul> First Sem 
+	 </ul>
+  <ul>
+    <li>
+      <input type="checkbox" id="task59" />
+      <label for="task59">Project Feasibility</label>
+    </li>
+    <li>
+      <input type="checkbox" id="task60" />
+      <label for="task60">Supply Chain Management</label>
+    </li>
+    <li>
+      <input type="checkbox" id="task61" />
+      <label for="task61">Systems Engineering</label>
+    </li>
+    <li>
+      <input type="checkbox" id="task62" />
+      <label for="task62">Packaging Technology</label>
+    </li>
+	  <li>
+	  <input type="checkbox" id="task63" />
+      <label for="task63">Elementary Electrical Engineering</label>
+    </li>
+	  <li>
+	  <input type="checkbox" id="task64" />
+      <label for="task64">Environmental Engineering Science</label>
+    </li>
+	  <li>
+	  <input type="checkbox" id="task65" />
+      <label for="task65">Readings in Phillipine History</label>
+    </li>
+	 
+  </ul>
+	<ul> Second Sem 
+	 </ul>
+	 <ul>
+    <li>
+      <input type="checkbox" id="task68" />
+      <label for="task68">IE Capstone Project</label>
+    </li>
+    <li>
+      <input type="checkbox" id="task69" />
+      <label for="task69">Engineering Values and Ethics </label>
+    </li>
+    <li>
+      <input type="checkbox" id="task70" />
+      <label for="task70">Human Resource Planning </label>
+    </li>
+    <li>
+      <input type="checkbox" id="task71" />
+      <label for="task71">Lean Six Sigma</label>
+    </li>
+	  <li>
+	  <input type="checkbox" id="task72" />
+      <label for="task72">Intellectual Property Rights</label>
+    </li>
+	  <li>
+	  <input type="checkbox" id="task73" />
+      <label for="task73">Art Appreciation</label>
+    </li>
+	  <li>
+	  <input type="checkbox" id="task74" />
+      <label for="task74">Science, Technology and Society</label>
+    </li>
+		 
+	</ul>
+</body>
+</html>
